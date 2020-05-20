@@ -1,9 +1,41 @@
 Scripts used for speed-benchmarking `methrix` `bsseq` `RnBeads` and `methylKit` Bioconductor packages. 
 
-	* `runner.sh` contains bash script which runs all benchmarks
-	* `src` contain individual rscripts for benchmarking spcecific task
-	* `results` contain output from individual task
+* `runner.sh` contains bash script which runs all benchmarks
+* `src` contain individual rscripts for benchmarking spcecific task
+* `results` contain output from individual task
 
+
+### Bismark coverage file sizes
+
+20 Bismark generated coverage files were used for benchmarking. Files were generated as a part of internal project at high coverage using distinct library prparation protocols.
+
+
+| File                    | n_CpGs   | Library |
+|-------------------------|----------|---------|
+| 5N_PBAT.bismark.cov.gz  | 45816481 | PBAT    |
+| 6N_PBAT.bismark.cov.gz  | 45367792 | PBAT    |
+| 5T_PBAT.bismark.cov.gz  | 47224004 | PBAT    |
+| 5N_TWGBS.bismark.cov.gz | 53993430 | TWGBS   |
+| 5T_TWGBS.bismark.cov.gz | 54975496 | TWGBS   |
+| 6T_EMseq.bismark.cov.gz | 54926428 | EMseq   |
+| 5N_SWIFT.bismark.cov.gz | 56146529 | SWIFT   |
+| 5T_SWIFT.bismark.cov.gz | 54928426 | SWIFT   |
+| 5N_EMseq.bismark.cov.gz | 56161262 | EMseq   |
+| 6N_TWGBS.bismark.cov.gz | 54422582 | TWGBS   |
+| 6N_SWIFT.bismark.cov.gz | 55185050 | SWIFT   |
+| 5T_EMseq.bismark.cov.gz | 56259475 | EMseq   |
+| 6N_EMseq.bismark.cov.gz | 56288935 | EMseq   |
+| 5T_WGBS.bismark.cov.gz  | 56381500 | WGBS    |
+| 5N_WGBS.bismark.cov.gz  | 56331423 | WGBS    |
+| 6N_WGBS.bismark.cov.gz  | 56454067 | WGBS    |
+| 6T_PBAT.bismark.cov.gz  | 46385430 | PBAT    |
+| 6T_SWIFT.bismark.cov.gz | 56049895 | SWIFT   |
+| 6T_TWGBS.bismark.cov.gz | 54347599 | TWGBS   |
+| 6T_WGBS.bismark.cov.gz  | 56517579 | WGBS    |
+
+
+
+### SessionInfo
 
 ```r
 > sessionInfo()
